@@ -1,6 +1,4 @@
 # SQL-Examples
-A collection of SQL examples
 
-## References
-This repository includes examples inspired by [W3Schools SQL Examples](https://www.w3schools.com/sql/sql_examples.asp).
+- This repository includes a collection of SQL examples inspired by [W3Schools SQL Examples](https://www.w3schools.com/sql/sql_examples.asp) and [SQL-Code](https://github.com/AlexTheAnalyst/SQL-Code).
 
