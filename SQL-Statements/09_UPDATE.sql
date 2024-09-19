@@ -8,7 +8,6 @@ If you omit the WHERE clause, all records in the table will be updated.
 */
 
 
-
 /***  Example: Update the first customer with a new contact name and a new city  ***/
 
 UPDATE Customers
@@ -21,3 +20,9 @@ WHERE CustomerID = 1;
 UPDATE Customers
 SET ContactName='Juan'
 WHERE Country='Mexico';
+
+
+/***  Example: Update all records without the WHERE clause  ***/
+
+UPDATE Customers
+SET ContactName='Juan';
