@@ -1,7 +1,6 @@
 /*  The MAX() function returns the largest value of the selected column  */
 
 
-
 /***  Example: Find the highest price in the Price column  ***/
 
 SELECT MAX(Price)
