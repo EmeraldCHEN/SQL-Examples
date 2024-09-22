@@ -5,6 +5,8 @@
 
 SELECT * FROM Customers;
 
+SELECT * FROM Customers AS Persons;
+
 
 /***  Example: Return data from the Customers table  ***/
 
@@ -12,6 +14,31 @@ SELECT Country FROM Customers;
 
 SELECT CustomerName, City FROM Customers;
 
+SELECT CustomerID AS ID, CustomerName AS Customer FROM Customers; 
+
+
+/***  Example: Use [square brackets] for aliases with space characters  ***/
+
+SELECT ProductName AS [My Great Products]
+FROM Products; 
+
+
+/***  Example: Use "double quotes" for aliases with space characters  ***/
+
+SELECT ProductName AS "My Great Products"
+FROM Products; 
+
+
+/***  Example: Create an alias named "Address" that combine four columns (Address, PostalCode, City and Country)  ***/
+
+SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
+FROM Customers; 
+
+
+/***  MySQL Example  ***/
+
+SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address
+FROM Customers; 
 
 
 /*  The SELECT DISTINCT statement is used to return only distinct (different) values  */ 
