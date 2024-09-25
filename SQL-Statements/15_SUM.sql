@@ -27,7 +27,7 @@ FROM OrderDetails
 GROUP BY OrderID; 
 
 
-/***  Example: Find the total earnings in dollars by multiply each quantity with 10
+/***  Example: Find the total earnings in dollars by multiply each quantity with 10  ***/
 
 SELECT SUM(Quantity * 10)
 FROM OrderDetails; 
