@@ -22,8 +22,14 @@ WHERE Country NOT IN ('Germany', 'France', 'UK');
 SELECT * FROM Customers
 WHERE CustomerID IN (SELECT CustomerID FROM Orders);
 
+SELECT DISTINCT Customers.* FROM Customers  /* Specifying Customers.* makes it clear which table the columns are coming from, especially in queries that involve multiple tables  */
+INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+
+
 
 /***  Example: Return all customers that have NOT placed any orders in the Orders table ***/
 
 SELECT * FROM Customers
 WHERE CustomerID NOT IN (SELECT CustomerID FROM Orders);
+
+
