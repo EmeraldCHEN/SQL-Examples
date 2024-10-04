@@ -8,7 +8,7 @@ If there is no ELSE part and no conditions are true, it returns NULL.
 */ 
 
 
-/***  Example: Go through conditions and returns a value when the first condition is met  ***/
+-- Example: Go through conditions and returns a value when the first condition is met 
 
 SELECT OrderID, Quantity,
 CASE
@@ -19,7 +19,7 @@ END AS QuantityText
 FROM OrderDetails; 
 
 
-/***  Example: Order the customers by City. If City is NULL, then order by Country  ***/
+-- Example: Order the customers by City. If City is NULL, then order by Country
 
 SELECT CustomerName, City, Country
 FROM Customers

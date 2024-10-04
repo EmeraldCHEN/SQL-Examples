@@ -23,3 +23,16 @@ WHERE Address IS NULL
 SELECT CustomerName, ContactName, Address FROM Customers
 WHERE Address IS NOT NULL;
 
+
+/***  Example: ISNULL() or COALESCE() function returns an alternative value when an expression is NULL  ***/
+
+SELECT ProductName, UnitPrice * (UnitsInStock + ISNULL(UnitsOnOrder, 0))
+FROM Products;
+
+
+SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))
+FROM Products; 
+
+
+
+
