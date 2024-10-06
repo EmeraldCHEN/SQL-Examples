@@ -20,13 +20,14 @@ Write a query to generate a report containing three columns: FullName, Rating, a
 
 
 Sample Output:
+
 -------------------------------------
--  FullName	      Rating	 Score -
+-  FullName	    Rating    Score -
 -                                   -
--  Alice Johnson	8	        85  - 
+-  Alice Johnson     8	        85  -
 -  Bob Smith	     8	        70  -
--  Charlie Brown	6	        55  -
--  David Williams	5	        40  -
+-  Charlie Brown     6	        55  -
+-  David Williams    5	        40  -
 -  N/A	             4	        30  -
 -  N/A	             3	        0   -
 -------------------------------------
