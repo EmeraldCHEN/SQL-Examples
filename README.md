@@ -5,5 +5,5 @@
 
 ## SQL Practice
 
-- Challenges for practicing SQL can be found on [HackerRank SQL](https://www.hackerrank.com/domains/sql).
+- More challenges for practicing SQL can be found on [HackerRank SQL](https://www.hackerrank.com/domains/sql).
 
