@@ -19,7 +19,8 @@ The following tables contain project data:
 
 Example Output:
 ----------------------------------
--  developer_id	    name         -
+-  developer_id	    name         - 
+-                                -
 -  101	            Alice Smith  -
 -  202	            Bob Johnson  -
 ----------------------------------
