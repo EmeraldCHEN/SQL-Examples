@@ -7,8 +7,6 @@ The results should be ordered by the total points in descending order.
 If two or more participants have the same total points, they should be sorted by their participant ID in ascending order. 
 Exclude all participants who have a total point score of 0 from the results.
 
-
-
 The following tables contain data:
 
 1. Participants:
@@ -30,7 +28,7 @@ SELECT
     p.name,
     COALESCE(SUM(max_scores.max_points), 0) AS total_points -- Calculate total points, default to 0 if null
 FROM 
-    Participants p
+    Participants AS p
 LEFT JOIN ( -- LEFT JOIN to ensure all participants are included in the output, regardless of whether they have made submissions
     SELECT 
         participant_id,
